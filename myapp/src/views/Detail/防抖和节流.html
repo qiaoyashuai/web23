@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>防抖 -------debounce</h2>
+        <!-- 防抖是函数执行n秒以后执行回调 若回调执行之前有继续执行函数则重新计时 -->
+        <input type="text" id="text1" value="151" />
+        <br />
+        <input type="text" id="text2" />
+    </div>
+    <script>
+        function debounce(callback, delay) {
+            //callback 是回调函数
+            // var fn = function() {};
+            var obj;
+            var arguments; //实参列表，是一个伪数组
+            var timer = null; //定义一个定时器
+            var fn = function() {
+                callback.apply(obj, arguments); //修改this执行
+            };
+            return function() {
+                obj = this; //this指向引用他的dom元素
+                arguments = arguments;
+                if (timer) {
+                    clearTimeout(timer);
+                    timer = null;
+                }
+                timer = setTimeout(fn, delay);
+            };
+        }
+        var otext1 = document.querySelector('#text1');
+        var otext2 = document.querySelector('#text2');
+        otext1.addEventListener(
+            'input',
+            debounce(function() {
+                // console.log(this); //普通函数 this指向window
+                otext2.value = otext1.value;
+            }, 500),
+            false
+        );
+    </script>
+</body>
+
+</html>

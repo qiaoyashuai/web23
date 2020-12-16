@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            color: palegoldenrod;
+        }
+        
+        div {
+            width: 0;
+            height: 0;
+            border: 100px solid #f00283;
+            border-color: #000 #aaa #333 #999;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="http://localhost:3030/adminapi/rejist" method="POST">
+        <label>
+        <span>姓名</span>
+        <input type="text" name="name" placeholder="请输入姓名" />
+      </label>
+        <label>
+        <span>电话</span>
+        <input type="text" name="phone" placeholder="请输入手机号" />
+      </label>
+        <label>
+        <span>密码</span>
+        <input type="password" name="password" placeholder="请输入密码" />
+      </label>
+        <input type="submit" value="提交" />
+    </form>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "editor.fontSize": 18,
+  "editor.quickSuggestions": {
+      "strings": true
+  },
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0,
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "wxml": "html"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "files.associations": {
+      "*.cjson": "jsonc",
+      "*.wxss": "css",
+      "*.wxs": "javascript",
+      "*.wpy": "vue"
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "files.autoSave": "afterDelay",
+  "javascript.updateImportsOnFileMove.enabled": "never"
+}

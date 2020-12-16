@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html,
+body {
+    font-size: 10px !important;
+    background-color: #f4f4f4;
+}
+
+@media screen and (min-width: 375px) {
+    html,
+    body {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html,
+    body {
+        font-size: 11.04px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html,
+    body {
+        font-size: 20.48px !important;
+    }
+}
